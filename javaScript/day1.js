@@ -58,9 +58,10 @@ console.log(sum([]));
 console.log(sum("oops"));
 
 //EXERCISE 2
-function namesToList(names) {
-  return names.map((name) => `<li>${name}</li>`);
-}
+// function namesToList(names) {
+//   return names.map((name) => `<li>${name}</li>`);
+// }
+const namesToList = (names) => names.map((name) => `<li>${name}</li>`);
 
 let myArr = ["Zara", "Leo", "Mia"];
 console.log(namesToList(myArr));
@@ -80,3 +81,14 @@ function getRandomJokes() {
 }
 
 console.log(getRandomJokes());
+
+//QUIZ
+//differece between let and const is let value can be reassigned after initialization but const lock the assignment and it is a constant after initialization, const value can be modified but the assignment cant change.
+//we use map to transform all element of an array into a new array of the initial array same length and filter is use to select  elements that match certain conditions into a new array with only those elements
+const newArr = [2, 4, 6, 9, 12, 18];
+
+console.log(newArr.map((mal) => mal * 2));
+console.log(newArr.filter((mal) => mal % 2 == 0 && mal % 3 == 0));
+
+const doubleNumber = (num) => num * 2;
+console.log(doubleNumber(5));
