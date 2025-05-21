@@ -1,24 +1,19 @@
 // day3 challenge
 //Personal budget calculator
 const myName = "Akanni Malik";
-let myMonthlyIncome = 30000;
+let myMonthlyIncome = 80000;
 let myMonthlyExpenses = 60000;
 let toSave = true;
+let balance = myMonthlyIncome - myMonthlyExpenses;
 
 console.log(`Hello, ${myName}!`);
-console.log(
-  `Your remaining balance is: ${myMonthlyIncome - myMonthlyExpenses}`
-);
-console.log(`10% of your income is: ${(myMonthlyIncome / 100) * 10}`);
-console.log(
-  `Is your balance positive? ${myMonthlyIncome - myMonthlyExpenses > 0}`
-);
-console.log(
-  `Can you save? ${toSave && myMonthlyIncome - myMonthlyExpenses > 0}`
-);
+console.log(`Your remaining balance is: ${balance}`);
+console.log(`10% of your income is: ${myMonthlyIncome * 0.1}`);
+console.log(`Is your balance positive? ${balance > 0}`);
+console.log(`Can you save? ${toSave && balance > 0}`);
 
-if (toSave && myMonthlyIncome - myMonthlyExpenses > 0) {
-  console.log(`You can save ${(myMonthlyIncome / 100) * 10} this month!`);
+if (toSave && balance > 0) {
+  console.log(`You can save ${myMonthlyIncome * 0.1} this month!`);
 } else {
   console.log(`Warning: Reduce your expenses to start saving!`);
 }
