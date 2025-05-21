@@ -12,5 +12,4 @@ console.log(`Are both numbers positive?: ${isPositive}`);
 
 //It was challenging at first but with being calm i was able to scale through
 //And the operators are funny that they i feel i need proper understanding of the operators so i don't have a problem with it on the long run, so i took my time on it
-
 //Doing day 3 today so i would start day 4 on tuesday
