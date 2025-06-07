@@ -126,20 +126,23 @@ if (number % 2 === 0) {
 }
 
 console.log(`Divisible by 3: ${divThree}`);
+if (number < 0) {
+  console.log(`number is negative and invalid for this exercise`);
+} else {
+  switch (true) {
+    case number > 50:
+      console.log(`Category: Large`);
+      break;
+    case number > 10:
+      console.log(`Category: Medium`);
+      break;
+    case number <= 10:
+      console.log(`Category: Small`);
+      break;
 
-switch (true) {
-  case number > 50:
-    console.log(`Category: Large`);
-    break;
-  case number > 10:
-    console.log(`Category: Medium`);
-    break;
-  case number <= 10:
-    console.log(`Category: Small`);
-    break;
-
-  default:
-    break;
+    default:
+      break;
+  }
 }
 
 //purnishment exercise 2
